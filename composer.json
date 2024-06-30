@@ -1,0 +1,22 @@
+{
+    "name": "tecdynamics/datasynchronize",
+    "description": "Make site ready in few steps",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Tec\\DataSynchronize\\": "src/"
+        }
+    },
+    "require": {
+        "tecdynamics/platform": "*@dev",
+        "maatwebsite/excel": "^3.1",
+        "spatie/simple-excel": "^3.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tec\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+            ]
+        }
+    }
+}
